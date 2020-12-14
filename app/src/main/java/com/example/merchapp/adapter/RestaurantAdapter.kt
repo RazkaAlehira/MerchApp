@@ -1,11 +1,14 @@
 package com.example.merchapp.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.merchapp.R
 import com.example.merchapp.data.FoodItem
+import kotlinx.android.synthetic.main.a_single_restaurant_row.view.*
 
 class RestaurantAdapter(private val foodItems: List<FoodItem>) : RecyclerView.Adapter<RestaurantAdapter.ViewHolder>() {
 
@@ -21,13 +24,20 @@ class RestaurantAdapter(private val foodItems: List<FoodItem>) : RecyclerView.Ad
 
     override fun getItemCount() = foodItems.size
 
-    class ViewHolder(view: View) :RecyclerView.ViewHolder(view) {
+    class ViewHolder(private val view: View) :RecyclerView.ViewHolder(view) {
 
+        @SuppressLint("SetTextI18n")
         fun bind(foodItem: FoodItem) {
             itemView.txt_title.text = foodItem.name
             itemView.txt_price.text = "Price: $ ${foodItem.price}"
+
+            if (foodItem.isHighlyRated) {
+                itemView
+            }
+
+            view.btn_first.setOnClickListener {
+                view.findNavController().navigate(R.id.action_FirstFragment_to_productInfo)
+            }
         }
-
     }
-
 }

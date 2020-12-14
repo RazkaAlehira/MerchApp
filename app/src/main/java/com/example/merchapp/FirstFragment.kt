@@ -33,7 +33,7 @@ class FirstFragment : Fragment() {
 //        }
 
         val foodItem = listOf (
-                FoodItem("The Future Kid's Merch", 9.45, "It's For Your Comfort...")
+                FoodItem("The Future Kid's Merch", 9.45, "It's For Your Comfort...", true)
         )
 
         binding.rvRestaurant.apply {
