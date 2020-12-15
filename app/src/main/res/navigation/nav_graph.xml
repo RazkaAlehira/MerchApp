@@ -22,11 +22,11 @@
         tools:layout="@layout/fragment_second"/>
     <fragment
         android:id="@+id/productInfo"
-        android:name="com.example.merchapp.ProductInfo"
+        android:name="com.example.merchapp.ProductInformationFragment"
         android:label="fragment_product_info"
         tools:layout="@layout/fragment_product_info" >
         <argument
-            android:name="productNameArgument"
+            android:name="productCodeArgument"
             app:argType="string" />
     </fragment>
 </navigation>
