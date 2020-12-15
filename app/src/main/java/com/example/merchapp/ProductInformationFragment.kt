@@ -1,10 +1,12 @@
 package com.example.merchapp
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.navArgs
 import com.example.merchapp.data.ProductData
 import kotlinx.android.synthetic.main.fragment_product_info.*
@@ -38,6 +40,7 @@ class ProductInformationFragment : Fragment() {
         if (product != null) {
             txt_product_title.text = product.name
             txt_product_description.text = product.description
+            img_product.setImageDrawable(ContextCompat.getDrawable(requireActivity(), product.photo))
         }
     }
 }

@@ -5,5 +5,6 @@ data class FoodItem (
         val name: String,
         val price: Double,
         val description: String,
-        val isHighlyRated: Boolean
+        val isHighlyRated: Boolean,
+        val photo: Int
 )
