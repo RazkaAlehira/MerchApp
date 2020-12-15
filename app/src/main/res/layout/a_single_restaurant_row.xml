@@ -24,7 +24,7 @@
         android:layout_height="200dp"
         android:layout_marginTop="40dp"
         android:scaleType="centerInside"
-        android:src="@drawable/MyMerch"
+        android:src="@drawable/mymerch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,15 +49,5 @@
         app:layout_constraintBottom_toBottomOf="@+id/btn_first"
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="$9.57"/>
-
-    <ImageView
-        android:id="@+id/img_rating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:tint="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_first"
-        app:layout_constraintStart_toEndOf="@+id/btn_first"
-        app:srcCompat="@drawable/highly_rated" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

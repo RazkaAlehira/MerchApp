@@ -24,5 +24,9 @@
         android:id="@+id/productInfo"
         android:name="com.example.merchapp.ProductInfo"
         android:label="fragment_product_info"
-        tools:layout="@layout/fragment_product_info" />
+        tools:layout="@layout/fragment_product_info" >
+        <argument
+            android:name="productNameArgument"
+            app:argType="string" />
+    </fragment>
 </navigation>

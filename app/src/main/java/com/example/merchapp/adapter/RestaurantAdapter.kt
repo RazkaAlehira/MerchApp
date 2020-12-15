@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.merchapp.FirstFragment
 import com.example.merchapp.R
 import com.example.merchapp.data.FoodItem
 import kotlinx.android.synthetic.main.a_single_restaurant_row.view.*
